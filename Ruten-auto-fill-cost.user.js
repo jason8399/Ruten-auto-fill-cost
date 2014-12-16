@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Ruten-auto-fill-cost
-// @version 1.1
+// @version 1.2
 // @author JasonPan
 // @namespace https://github.com/jason8399
 // @description Auto-fill-cost
@@ -28,14 +28,14 @@
     } + function fillCostFree(){
 	    c = document.getElementById("g_ship_free");
     	c.click();
-		if (document.getElementsByName("g_direct_price")[0].value >= 3000) {
-			document.getElementById("cb_pway_pp_crd").checked = true;
-			var check_list = ["cb_pway_pp_crd_zero", "cb_pway_pp_crd_n3", "cb_pway_pp_crd_n6", "cb_pway_pp_crd_n12"]
-			for(i = 0; i < check_list.length; i++){
-				document.getElementById(check_list[i]).checked = true;
-			}
-		}else{
-			document.getElementById("cb_pway_pp_crd").checked = false;
+		var flag = true;
+		if (document.getElementsByName("g_direct_price")[0].value < 3000) {
+			flag = false;
+		};
+		document.getElementById("cb_pway_pp_crd").checked = flag;
+		var check_list = ["cb_pway_pp_crd_zero", "cb_pway_pp_crd_n3", "cb_pway_pp_crd_n6", "cb_pway_pp_crd_n12"];
+		for(i = 0; i < check_list.length; i++){
+			document.getElementById(check_list[i]).checked = flag;
 		};
 		var check_list = ["cb_pway_paylink","cb_pway_atm","cb_pway_ps","cb_dway_post","cb_dway_seven","cb_pway_cvs_cod","cb_pway_seven_cod","cb_pway_cod","cb_pway_f2f"];
 		for(i = 0; i < check_list.length; i++){
