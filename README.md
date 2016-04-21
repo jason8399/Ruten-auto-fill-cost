@@ -3,8 +3,13 @@ Ruten Auto Fill Cost 自動運費填寫
 這是個 UserScript 可在 露天拍買上架系統 建立一個按鈕 一鍵填寫運費
 
 ### Changelog ###
+* Version 2.0:
+	* 修正https問題
+	* 重新更新價格
+	* Add AutoUpdate
+	* Code reformat
 * Version 1.2:
-	* 修正運費低於3000，分期付款無法取消BUG 
+	* 修正運費低於3000，分期付款無法取消BUG
 * Version 1.1:
 	* 新增自動填寫免運費
 	* 直購價3000以上 自動12期分期
