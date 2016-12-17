@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name Ruten-auto-fill-cost
-// @version 2.0
+// @version 2.1
 // @author JasonPan
 // @namespace https://github.com/jason8399
 // @description Auto-fill-cost
-// @include https://mybidu.ruten.com.tw/upload/step2_form.php*
-// @match https://mybidu.ruten.com.tw/upload/step2_form.php*
+// @include https://mybidu.ruten.com.tw/upload/item_start.php*
+// @match https://mybidu.ruten.com.tw/upload/item_start.php*
 // @downloadURL https://github.com/jason8399/Ruten-auto-fill-cost/raw/master/Ruten-auto-fill-cost.user.js
 // ==/UserScript==
 (function () {

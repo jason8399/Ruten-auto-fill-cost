@@ -3,6 +3,8 @@ Ruten Auto Fill Cost 自動運費填寫
 這是個 UserScript 可在 露天拍買上架系統 建立一個按鈕 一鍵填寫運費
 
 ### Changelog ###
+* Version 2.1:
+	* 露天拍賣上架URL更換
 * Version 2.0:
 	* 修正https問題
 	* 重新更新價格
